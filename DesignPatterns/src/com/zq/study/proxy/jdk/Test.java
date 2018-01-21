@@ -20,8 +20,7 @@ public class Test {
 		 * interfaces  实现接口
 		 * h InvocationHandler
 		 */
-		Moveable m = (Moveable)Proxy.newProxyInstance(cls.getClassLoader(),
-												cls.getInterfaces(), h);
+		Moveable m = (Moveable)Proxy.newProxyInstance(cls.getClassLoader(),cls.getInterfaces(), h);
 		m.move();
 	}
 
